@@ -18,12 +18,16 @@ int main(void)
 		{
 			putchar(n);
 			putchar(p);
-			putchar(',');
-			putchar(' ');
+
+			if (n == 56 && p == 57)
+			{
+				break;
+			}
+			else
+				putchar(',');
+				putchar(' ');
 		}
-
 	}
-	putchar('\n');
+	putchar(',');
 	return (0);
-
 }
