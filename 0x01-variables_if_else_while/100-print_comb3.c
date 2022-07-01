@@ -10,16 +10,16 @@
 int main(void)
 {
 	int n;
-	int p;
+	int t;
 
 	for (n = 48; n < 58; n++)
 	{
-		for (p = 49; p < 58; p++)
+		for (t = 49; t < 58; t++)
 		{
 			putchar(n);
-			putchar(p);
+			putchar(t);
 
-			if (n == 56 && p == 57)
+			if (n == 56 && t == 57)
 			{
 				break;
 			}
