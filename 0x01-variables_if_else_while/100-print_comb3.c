@@ -19,7 +19,7 @@ int main(void)
 			putchar(n);
 			putchar(t);
 
-			if (n == 56 && t == 57)
+			if (n == 56 && t >= 57)
 			{
 				break;
 			}
@@ -30,6 +30,6 @@ int main(void)
 			}
 		}
 	}
-	putchar(',');
+	putchar('\n');
 	return (0);
 }

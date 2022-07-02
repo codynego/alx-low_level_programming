@@ -14,9 +14,9 @@ int main(void)
 	int b;
 
 
-	for (n = 48; n < 58; n++)
+	for (n = 48; n < 56; n++)
 	{
-		for (t = 49; t < 58; t++)
+		for (t = 49; t < 57; t++)
 		{
 			for (b = 50; b < 58; b++)
 			{
@@ -36,6 +36,6 @@ int main(void)
 			}
 		}
 	}
-	putchar(',');
+	putchar('\n');
 	return (0);
 }
