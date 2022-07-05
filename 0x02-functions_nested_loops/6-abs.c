@@ -2,7 +2,7 @@
 
 
 /**
- * print_last_digit - print the absolute value of number
+ * _abs - print the absolute value of number
  *
  * @i: character to be checked
  *
@@ -10,21 +10,16 @@
  *
  */
 
-int print_last_digit(int i)
+int _abs(int i)
 {
-	int n  = i % 10;
-	int result;
-
 	if (i < 0)
 	{
-		result = -1 * n;
+		return (i * -1);
 	}
 	else
 	{
-		result = n;
+		return (i);
 	}
-	_putchar('0' + result);
-	return (result);
 
 
 }
