@@ -10,7 +10,7 @@
  *
  */
 
-int print_sign(int i)
+int _abs(int i)
 {
 	if (i < 0)
 	{
