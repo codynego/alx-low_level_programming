@@ -15,7 +15,7 @@ int main(void)
 
 	lenght = sizeof(character) / sizeof(character[0]);
 
-	for (i = 0; i < lenght; i++)
+	for (i = 0; i < lenght - 1; i++)
 	{
 		_putchar(character[i]);
 
