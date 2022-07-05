@@ -20,7 +20,7 @@ void times_table(void)
 	{
 		for (b = 48; b <= 57; b++)
 		{
-			multipy = a * b;
+			multiply = a * b;
 		
 			_putchar(multiply);
 			_putchar(',');
