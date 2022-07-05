@@ -16,9 +16,9 @@ void times_table(void)
 	int b;
 	int multiply;
 
-	for (a = 48; a <= 57; a++)
+	for (a = 0; a <= 9; a++)
 	{
-		for (b = 48; b <= 57; b++)
+		for (b = 0; b <= 9; b++)
 		{
 			multiply = a * b;
 		
