@@ -5,15 +5,13 @@
  * jack_bauer- print every minute starting from 00:00
  *
  *
- * @i: character to be checked
- *
  * Return: return every minutes
  *
  */
 
 void jack_bauer(void)
 {
-	int a,b,c,d;
+	int a, b, c, d;
 
 	for (a = 48; a <= 50; a++)
 	{
