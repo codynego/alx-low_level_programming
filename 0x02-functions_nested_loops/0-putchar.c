@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * main - a function that prints _putchar
@@ -9,7 +9,20 @@
 
 int main(void)
 {
-	_putchar("_putchar");
+	char character[] = "_putchar";
+	int i;
+	int lenght;
 
-	return (0);
+	lenght = sizeof(character) / sizeof(character[0]);
+
+	for (i = 0; i < lenght; i++)
+	{
+		_putchar(character[i]);
+
+	}
+		_putchar('\n');
+
+		return (0);
+
+
 }
