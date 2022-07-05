@@ -4,7 +4,8 @@
 /**
  * add - print the absolute value of number
  *
- * @i: character to be checked
+ * @a: character to be checked
+ * @b: second value
  *
  * Return: return the absolute value
  *
