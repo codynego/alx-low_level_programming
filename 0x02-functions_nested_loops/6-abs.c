@@ -2,7 +2,7 @@
 
 
 /**
- * print_sign - print the absolute value of number
+ * _abs - print the absolute value of number
  *
  * @i: character to be checked
  *
