@@ -7,7 +7,7 @@
  * Return: return 0 as success
  */
 
-void print_numbers(void);
+void print_numbers(void)
 {
 	int a;
 
