@@ -3,7 +3,8 @@
 /**
  * mul - multiplies 2 integer together
  *
- * @c: charater to be checked
+ * @a: charater to be checked
+ * @b: second number
  *
  * Return: return 0 as success
  */
