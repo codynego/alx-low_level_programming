@@ -1,42 +1,22 @@
 #include "main.h"
 
 /**
- * print_square - print '#' n times
- *
- * @size: charater to be checked
- *
- * Return: return 0 as success
+ * print_square - prints hashes squares.
+ * @size: size of the square.
+ * Return: no return.
  */
-
 void print_square(int size)
 {
-	int i;
-	int b = 0;
+	int i, j;
 
-	do {
-
-		for (i = 0; i <= size; i++)
-		{
-			if (size <= 0)
-			{
-				_putchar('\n');
-			}
-			else
-			{
-				_putchar('#');
-
-			}
-			_putchar('\n');
-		}
-
-			b++;
-			putchar('\n');
-	}
-	while
+	for (i = 0; i < size; i++)
 	{
-
-		(b < size);
-
+		for (j = 0; j < size; j++)
+		{
+			_putchar(35);
+		}
+		if (i != size - 1)
+			_putchar('\n');
 	}
-
+	_putchar('\n');
 }
