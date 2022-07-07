@@ -13,8 +13,7 @@ void print_square(int size)
 	int i;
 	int b = 0;
 
-	do
-	{
+	do {
 
 		for (i = 0; i <= size; i++)
 		{
@@ -27,15 +26,17 @@ void print_square(int size)
 				_putchar('#');
 
 			}
-	
-				_putchar('\n');
+			_putchar('\n');
 		}
 
 			b++;
 			putchar('\n');
 	}
-	while (b < size);
+	while
+	{
+
+		(b < size);
+
+	}
+
 }
-
-
-

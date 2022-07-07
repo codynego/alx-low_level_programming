@@ -1,4 +1,4 @@
-#iinclude "main.h"
+#include "main.h"
 
 /**
  * print_diagonal - print '\' n times
