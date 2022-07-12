@@ -1,0 +1,21 @@
+#include "main.h"
+
+/**
+ * _puts - a function that prints a string
+ *
+ * @str: input integer
+ *
+ * Return: Always void
+ *
+ */
+
+void _puts(char *str)
+{
+	int count = 0;
+
+	while (*(s + count) != '\0')
+	{
+		_putchar(*(str + count);
+	}
+		_putchar('\n');
+}
