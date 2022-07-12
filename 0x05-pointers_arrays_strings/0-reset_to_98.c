@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98: a function that takes an integer and update to 98.
+ * reset_to_98 - a function that takes an integer and update to 98.
  *
  * @n: input integer.
  *
