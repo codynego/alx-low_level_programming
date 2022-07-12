@@ -5,7 +5,7 @@
  *
  * @s: input integer
  *
- * Return: Always 0 as success.
+ * Return: Always lenght
  *
  */
 
@@ -13,9 +13,9 @@ int _strlen(char *s)
 {
 	int lenght = 0;
 
-	while (*(s + lenght) != '\n')
+	while (*(s + lenght) != '\0')
 	{
 		lenght++;
 	}
-		return (lenght);
+	return (lenght);
 }
