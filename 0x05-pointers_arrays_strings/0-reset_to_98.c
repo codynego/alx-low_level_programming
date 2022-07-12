@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
+ * reset_to_98: a function that takes an integer and update to 98
  *
- * reset_to_98 - a function that takes an integer as a 
- * parameter and update it value to 98
- *
- * Return: Always 0
+ * Return: Always void
  */
 
 void reset_to_98(int *n)
