@@ -1,18 +1,13 @@
-#include "main.h"
-
-
+#include "holberton.h"
 /**
- * add - print the absolute value of number
- *
- * @a: character to be checked
- * @b: second value
- *
- * Return: return the absolute value
- *
+ * add - returns the sum of its parameters
+ * @a: int type number
+ * @b: int type number
+ * Return:0
  */
+
 
 int add(int a, int b)
 {
-	return (a + b);
-
+return (a + b);
 }
