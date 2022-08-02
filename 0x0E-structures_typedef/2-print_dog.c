@@ -5,12 +5,12 @@
  * print_dog - a function that prints a struct dog
  *
  * @d: a struct dog.
- * Return: no return.
+ * Return: return NULL
  */
 
 void print_dog(struct dog *d)
 {
-	if (d)
+	if (d != NULL)
 	{
 		if (d->name == NULL)
 		{
@@ -36,6 +36,10 @@ void print_dog(struct dog *d)
 		{
 			printf("Owner: %s\n", d->owner);
 		}
+	}
+	else
+	{
+		return (NULL);
 	}
 }
 
