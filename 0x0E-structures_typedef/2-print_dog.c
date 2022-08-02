@@ -4,13 +4,13 @@
 /**
  * print_dog - a function that prints a struct dog
  *
- * @d: a struct dog
- * Return: no return
+ * @d: a struct dog.
+ * Return: no return.
  */
 
 void print_dog(struct dog *d)
 {
-	if (d != NULL)
+	if (d)
 	{
 		if (d->name == NULL)
 		{
