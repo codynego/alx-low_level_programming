@@ -1,45 +1,38 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - prints an hash table
- * @ht: the hash table to print
- *
- * Return: no return
+ * hash_table_print - prints a hash table.
+ * @ht: the hash table
  */
 
 void hash_table_print(const hash_table_t *ht)
 {
-	const hash_table_t *tmp;
-	char *sep;
+	hash_node_t *node;
+	unsigned long int i;
+	unsigned char comma_flag = 0;
 
-	tmp = ht;
-	printf("{");
-	sep = "";
-	for (int i = 0; i < ht->size; i++)
+	if (ht == NULL)
 	{
-		if (tmp->array[i] == NULL)
+		return;
+	}
+	printf("{");
+	for (i = 0; i < ht->size; i++)
+	{
+		if (ht->array[i] != NULL)
 		{
-			continue;
-		}
-		else
-		{
-			printf("%s'%s': '%s'", sep, tmp->array[i]->key, tmp->array[i]->value);
-			sep = ", ";
-			if (tmp->array[i]->next == NULL)
+			if (comma_flag == 1)
 			{
-				continue;
+				printf(", ");
 			}
-			else
+			node = ht->array[i];
+			while (node != NULL)
 			{
-				hash_node_t *current;
-
-				current = tmp->array[i]->next;
-				while (current != NULL)
-				{
-					printf("%s'%s': '%s'", sep, current->key, current->value);
-					current = current->next;
-				}
+				printf("'%s': '%s'", node->key, node->value);
+				node = node->next;
+				if (node != NULL)
+					printf(", ");
 			}
+			comma_flag = 1;
 		}
 	}
 	printf("}\n");
