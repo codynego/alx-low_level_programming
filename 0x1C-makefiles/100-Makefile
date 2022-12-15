@@ -1,20 +1,20 @@
 CC = gcc
-SRC = main.c holberton.c
-OBJ = $(SRC:.c=.o) 
+SRC = holberton.c main.c
+OBJ = $(SRC:%.c=%.o)
 NAME = holberton
-TOCLEAN = *~ 
+RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
+.PHONY: all clean oclean fclean re
 
-.PHONY: all clean fclean oclean re
+all: m.h $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-all : $(OBJ) m.h
-	$(CC) $(OBJ) -o $(NAME)
-
-fclean: oclean clean
+clean:
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
-clean :
-	$(RM)  $(TOCLEAN) $(NAME)
-re: fclean all
+fclean: clean oclean
+
+re: fclean all 

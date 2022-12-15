@@ -1,2 +1,6 @@
-# Makefiles
-Foundations - Low-level programming & Algorithm ― Hatching out
+#Makefiles
+==============
+```
+target: dependencies
+<tab> action
+```
